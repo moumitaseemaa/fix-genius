@@ -1,5 +1,6 @@
+import React from "react";
 import { useState } from "react";
-import DropdownIcon from "@/assets/icons/callDetails/DropdownIcon";
+import DropdownIcon from "../assets/icons/callDetails/DropdownIcon.jsx";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -11,29 +12,29 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const DropdownButton = ({ items }) => {
-  const [range, setRange] = useState(items[0]);
+const DropdownButton = ({ items, className, setCurrent, label }) => {
+  const [active, setActive] = useState(items[0]);
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className={"bg-[#1D293D] border border-[#2B7FFF20] text-white"}
+          className={`bg-[#1D293D] hover:bg-[#1D293D50] hover:text-white border border-[#2B7FFF20] hover:border-[#2B7FFF50] text-white sm:px-8 py-4 font-inter text-base  leading-5 font-normal h-12.5 ${className}`}
         >
-          {range} <DropdownIcon />
+          {active} <DropdownIcon />
         </Button>
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="w-40 bg-[#0F172B] border border-[#2B7FFF20] text-white ">
         <DropdownMenuGroup>
-          <DropdownMenuLabel></DropdownMenuLabel>
+          {label && <DropdownMenuLabel></DropdownMenuLabel>}
 
           {items.map((item, index) => (
             <DropdownMenuCheckboxItem
               key={item + index}
-              checked={range === item}
-              onSelect={() => setRange(item)}
+              checked={active === item}
+              onSelect={() => { setActive(item);  setCurrent(item)}}
             >
               {item}
             </DropdownMenuCheckboxItem>

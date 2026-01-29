@@ -7,18 +7,15 @@ import {
 
 export function SearchBar({ icon, label, className }) {
   return (
-    <div className="w-full">
-
-      <Field>
-        {label && <FieldLabel htmlFor="input-group-url">{label}</FieldLabel>}
-        <InputGroup className={className}>
-          <InputGroupInput
-            id="input-group-url"
-            placeholder="Search by phone number, issue type..."
-          />
-          <InputGroupAddon>{icon}</InputGroupAddon>
-        </InputGroup>
-      </Field>
-    </div>
+    <Field>
+      {label && <FieldLabel htmlFor="input-group-url">{label}</FieldLabel>}
+      <InputGroup className={className}>
+        <InputGroupInput
+          id="input-group-url"
+          placeholder="Search by phone number, issue type..."
+        />
+        <InputGroupAddon>{icon}</InputGroupAddon>
+      </InputGroup>
+    </Field>
   );
 }
