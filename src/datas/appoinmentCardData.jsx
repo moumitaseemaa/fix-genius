@@ -1,6 +1,6 @@
-import AppointmentBookedIcon from "@/assets/icons/appointment/appointmentBookedIcon";
-import AppointmentCalenderIcon from "@/assets/icons/appointment/appointmentCalenderIcon";
-import AppointmentWarnIcon from "@/assets/icons/appointment/appointmentWarnIcon";
+import AppointmentBookedIcon from "../assets/icons/appointment/AppointmentBookedIcon.jsx.jsx";
+import AppointmentCalenderIcon from "../assets/icons/appointment/AppointmentCalenderIcon.jsx";
+import AppointmentWarnIcon from "../assets/icons/appointment/AppointmentWarnIcon.jsx";
 
 export const appoinmentCardData = [
   {
