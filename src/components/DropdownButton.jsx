@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DropdownIcon from "../assets/icons/callDetails/DropdownIcon.jsx ";
+import DropdownIcon from "@/assets/icons/callDetails/DropdownIcon";
 
 import { Button } from "@/components/ui/button";
 import {

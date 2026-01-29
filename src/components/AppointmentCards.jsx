@@ -4,7 +4,7 @@ import CardLayout from "./CardLayout";
 
 const AppointmentCards = () => {
   return (
-      <div className="my-6 flex items-center justify-between gap-10 flex-wrap">
+      <div className="my-3 md:my-6 flex items-center justify-center md:justify-between max-sm:gap-6 sm:gap-3 md:gap-10 flex-wrap">
      {
         appoinmentCardData.map((card, index) =>
         <div key={index} className=" w-[29.5%] grow">

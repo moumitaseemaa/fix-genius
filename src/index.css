@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:regular,500,600,700,italic,500italic,600italic,700italic);
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -5,6 +9,7 @@
 
 @theme {
   --font-inter: "Inter", sans-serif;
+  --font-arimo: "Arimo", sans-serif;
   --color-primary: #111b3c;
   --color-semi-dark: #162f63;
   --color-blue: #0f62fe;
@@ -18,11 +23,11 @@
   --color-coral-red: #ff6467;
   --color-light-gray: #7a8ba4;
   --color-borderReq: #1d293d50;
-  --color-borderBottom: #192D71;
+  --color-borderBottom: #192d71;
   --color-graph-bg: #0f172b50;
   --color-borderColor: #111b3c;
-  --color-formbg: #0A0A0F50;
-  --color-formborder: #00FF8820;
+  --color-formbg: #0a0a0f50;
+  --color-formborder: #00ff8820;
 }
 
 .inset-shadow {
@@ -165,7 +170,6 @@
     @apply bg-background text-foreground;
   }
 }
-
 
 .recharts-wrapper text {
   fill: #fff !important;

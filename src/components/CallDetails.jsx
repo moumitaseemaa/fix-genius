@@ -7,35 +7,40 @@ import PaperIcon from "../assets/icons/callDetails/PaperIcon.jsx";
 const CallDetails = ({ data }) => {
   console.log(data);
   return (
-    <div className="rounded-3xl color-card  ">
+     <section className="rounded-3xl color-card-bg  ">
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer p-4 border-b border-[#2B7FFF20] ">
         Call Details
       </h3>
 
-      <div className="flex flex-col gap-6 p-6 ">
-        <div className="flex flex-wrap gap-4 font-inter font-normal justify-between ">
-          <div className="w-[48%]">
-            <span className="text-gray text-sm leading-5 ">Phone Number</span>
-            <p className="text-white text-base leading-6 ">
-              {data.phoneNumber}
-            </p>
+      <div className="flex flex-col gap-6 p-3 sm:p-6 ">
+
+          <div className="flex ">
+            <div className="grow max-w-1/2">
+              <span className="text-gray text-sm leading-5 ">Phone Number</span>
+              <p className="text-white text-base leading-6 ">
+                {data.phoneNumber}
+              </p>
+            </div>
+
+            <div className="grow max-w-1/2">
+              <span className="text-gray text-sm leading-5 ">Duration</span>
+              <p className="text-white text-base leading-6 ">{data.duration}</p>
+            </div>
           </div>
 
-          <div className="w-[48%]">
-            <span className="text-gray text-sm leading-5 ">Duration</span>
-            <p className="text-white text-base leading-6 ">{data.duration}</p>
-          </div>
+          <div className="flex">
+            <div className="grow max-w-1/2">
+              <span className="text-gray text-sm leading-5 ">Date & Time</span>
+              <p className="text-white text-base leading-6 ">{data.dateTime}</p>
+            </div>
 
-          <div className="w-[48%]">
-            <span className="text-gray text-sm leading-5 ">Date & Time</span>
-            <p className="text-white text-base leading-6 ">{data.dateTime}</p>
+            <div className="grow max-w-1/2">
+              <span className="text-gray text-sm leading-5 ">Issue Type</span>
+              <p className="text-white text-base leading-6 ">
+                {data.issueType}
+              </p>
+            </div>
           </div>
-
-          <div className="w-[48%]">
-            <span className="text-gray text-sm leading-5 ">Issue Type</span>
-            <p className="text-white text-base leading-6 ">{data.issueType}</p>
-          </div>
-        </div>
 
         <div>
           <p className="text-gray text-sm leading-5 mb-1 ">Call Type</p>
@@ -55,54 +60,53 @@ const CallDetails = ({ data }) => {
           <p className="text-white text-base leading-6 ">{data.outcome}</p>
         </div>
 
+        <Button
+          className={
+            "audio-gradient flex justify-center w-full rounded-[14px] border border-[#AD46FF30] cursor-pointer "
+          }
+        >
+          <PlayIcon />
+          <p className="text-[#C27AFF]  ">Play Audio Recording</p>
+        </Button>
 
-          <Button
-            className={
-              "audio-gradient flex justify-center w-full rounded-[14px] border border-[#AD46FF30] "
-            }
-          >
-            <PlayIcon />
-            <p className="text-[#C27AFF]  ">Play Audio Recording</p>
-          </Button>
+        <div className="flex gap-2 items-center mb-3 text-info ">
+          <PaperIcon />
+          <p className="text-white text-base leading-6 ">
+            Conversation Transcript
+          </p>
+        </div>
 
-
-
-          <div className="flex gap-2 items-center mb-3 text-info ">
-            <PaperIcon />
-            <p className="text-white text-base leading-6 ">Conversation Transcript</p>
-          </div>
-
-        {
-          data.transcript.length !== 0 ?
+        {data.transcript.length !== 0 ? (
           <>
-             <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-4  ">
-            {
-              data.transcript.map((item) => (
+            <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-3 sm:p-4  ">
+              {data.transcript.map((item) => (
                 <div>
-                  <p className={`text-base leading-6 ${item.role !== 'Customer' ? 'text-success' : 'text-info' } `}>{ item.role }</p>
-                  <p className="font-inter text-xs leading-5 text-white font-medium ">{ item.message }</p>
+                  <p
+                    className={`text-base leading-6 ${item.role !== "Customer" ? "text-success" : "text-info"} `}
+                  >
+                    {item.role}
+                  </p>
+                  <p className="font-inter text-xs leading-5 text-white font-medium ">
+                    {item.message}
+                  </p>
                 </div>
-              ))
-            }
-          </div>
+              ))}
+            </div>
           </>
-            :
-            
-            <>
-               <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-10  ">
-
-                <div className="flex flex-col gap-4 items-center justify-center">
-                  <PaperIcon className={'size-20 text-gray  '} />
-                  <p className="text-gray text-lg leading-5 ">No Transcript Here!</p>
-                </div>
-            
-          </div>
+        ) : (
+          <>
+            <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-10  ">
+              <div className="flex flex-col gap-4 items-center justify-center">
+                <PaperIcon className={"size-10 sm:size-20 text-gray  "} />
+                <p className="text-gray text-lg leading-5 ">
+                  No Transcript Here!
+                </p>
+              </div>
+            </div>
           </>
-            }
-         
-
+        )}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -8,7 +8,7 @@ const DashboardPage = () => {
     <>
       <CardPair />
       <Graph />
-      <div className="flex justify-between gap-x-6 pt-6">
+      <div className="flex justify-between gap-6 pt-6 flex-wrap md:flex-nowrap ">
         <RecentActivity />
         <RepairRequest />
       </div>

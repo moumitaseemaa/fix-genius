@@ -1,4 +1,4 @@
-const PaperIcon = () => {
+const PaperIcon = ({className}) => {
   return (
     <svg
       width="20"

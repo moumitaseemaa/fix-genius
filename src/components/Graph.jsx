@@ -58,7 +58,7 @@ const Graph = () => {
   return (
     <Card
       className={
-        "min-w-292.5 max-h-106.5 bg-[#0F172B50] border border-[#2B7FFF20] "
+           " md:min-w-full max-h-106.5 bg-[#0F172B50] border border-[#2B7FFF20] "
       }
     >
       <CardHeader>

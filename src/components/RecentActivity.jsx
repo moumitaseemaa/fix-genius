@@ -2,7 +2,7 @@ import activitiesData from "../datas/activitiesData";
 
 const RecentActivity = () => {
   return (
-    <div className="p-6 rounded-2xl bg-graph-bg grow max-w-1/2">
+    <div className="p-3 md:rounded-[16px] md:p-6 rounded-2xl bg-graph-bg grow md:max-w-1/2 w-full ">
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
         Recent Activity
       </h3>

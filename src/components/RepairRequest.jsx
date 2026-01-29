@@ -2,7 +2,7 @@ import ReqProgress from "./ReqProgress";
 
 const RepairRequest = () => {
   return (
-    <div className="grow font-arimo p-6 rounded-2xl bg-graph-bg border border-borderColor">
+    <div className="w-full grow md:max-w-1/2 font-arimo p-3 md:p-6 rounded-2xl bg-graph-bg border border-borderColor">
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
        Top Repair Requests
       </h3>
