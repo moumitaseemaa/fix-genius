@@ -14,7 +14,7 @@ const Header = () => {
       </h1>
 
       <div className=" flex items-center justify-end md:justify-center space-x-2.5 md:space-x-10">
-        <AppNotificationIcon className={" text-white size-6"} />
+        <AppNotificationIcon className={" text-white size-6 md:size-8 "} />
         <div className="w-7.5 h-7.5 md:w-full md:h-full">
           <img src={profileImage} alt="profileImage" className="size-full" />
         </div>
