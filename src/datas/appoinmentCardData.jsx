@@ -1,4 +1,4 @@
-import AppointmentBookedIcon from "../assets/icons/appointment/AppointmentBookedIcon.jsx.jsx";
+import AppointmentBookedIcon from "../assets/icons/appointment/AppointmentBookedIcon.jsx";
 import AppointmentCalenderIcon from "../assets/icons/appointment/AppointmentCalenderIcon.jsx";
 import AppointmentWarnIcon from "../assets/icons/appointment/AppointmentWarnIcon.jsx";
 
