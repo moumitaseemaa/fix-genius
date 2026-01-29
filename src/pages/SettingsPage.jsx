@@ -27,7 +27,7 @@ const SettingsPage = () => {
 
   return (
     <>
-      <div className="pt-6 md:max-w-137.5 w-full pr-4 sm:pr-0">
+      <div className="pt-6 md:max-w-137.5 w-full pr-4 md:pr-0">
         <div className="font-inter font-normal sm:text-2xl text-base leading-9 text-white flex gap-x-4 sm:gap-x-16 ml-3">
           <button>Profile</button>
           <button>Password Settings</button>
@@ -37,7 +37,7 @@ const SettingsPage = () => {
             Profile Image
           </h3>
           <div className="flex sm:gap-x-2 gap-x-1">
-            <div className="size-25.5">
+            <div className="md:size-25.5 size-15">
               <img src={profileImage} alt="profileImage" className="w-full" />
             </div>
             <div className="mb-2 place-self-end">

@@ -24,7 +24,7 @@ const Sidebar = () => {
               <span className=" text-white h-8 w-8 flex items-center justify-center ">
                 {item.icon}
               </span>
-              <span className=" font-inter whitespace-nowrap font-medium text-base leading-[150%] text-white hidden sm:block">
+              <span className=" font-inter whitespace-nowrap font-medium text-base leading-[150%] text-white hidden md:block">
                 {item.text}
               </span>
             </Link>
@@ -33,7 +33,7 @@ const Sidebar = () => {
       </ul>
       <button className="flex items-center gap-4 ml-4 mt-auto cursor-pointer">
         <LogoutIcon />
-        <span className="font-medium text-base leading-[150%] text-[#FF1100] hidden sm:block">
+        <span className="font-medium text-base leading-[150%] text-[#FF1100] hidden md:block">
           Log Out
         </span>
       </button>
