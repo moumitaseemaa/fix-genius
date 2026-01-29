@@ -50,8 +50,8 @@ const ArrowIcon = () => {
           y2="48"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF6900" />
-          <stop offset="1" stop-color="#FB2C36" />
+          <stop stopColor="#FF6900" />
+          <stop offset="1" stopColor="#FB2C36" />
         </linearGradient>
       </defs>
     </svg>

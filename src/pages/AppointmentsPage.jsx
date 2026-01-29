@@ -1,8 +1,12 @@
-import React from 'react'
+import AppointmentCards from "@/components/AppointmentCards"
+import Booking from "@/components/Booking"
 
 const AppointmentsPage = () => {
   return (
-    <div>AppointmentsPage</div>
+    <>
+    <AppointmentCards/>
+    <Booking/>
+    </>
   )
 }
 

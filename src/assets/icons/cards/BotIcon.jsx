@@ -64,8 +64,8 @@ const BotIcon = () => {
           y2="48"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#AD46FF" />
-          <stop offset="1" stop-color="#F6339A" />
+          <stop stopColor="#AD46FF" />
+          <stop offset="1" stopColor="#F6339A" />
         </linearGradient>
       </defs>
     </svg>

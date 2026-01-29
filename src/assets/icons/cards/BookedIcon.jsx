@@ -48,8 +48,8 @@ const BookedIcon = () => {
           y2="48"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00C950" />
-          <stop offset="1" stop-color="#00BC7D" />
+          <stop stopColor="#00C950" />
+          <stop offset="1" stopColor="#00BC7D" />
         </linearGradient>
       </defs>
     </svg>

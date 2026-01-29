@@ -5,7 +5,7 @@ import { profileForm } from "@/datas/profileForm";
 const EdittProfilePage = () => {
 
   return (
-    <div className="pt-6 max-w-250">
+    <div className="pt-6 sm:max-w-250 w-full">
       <div className="font-inter font-normal text-2xl leading-9 text-white flex gap-x-16 ml-3 border-b border-borderBottom pb-2">
         <button className={"border-b-2 -mb-2 px-3 border-b-[#87A2FF]"}>
           Profile

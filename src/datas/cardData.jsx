@@ -11,37 +11,42 @@ export const cardData = [
       title: 'Total Calls Today',
       CardValue: '127',
       percent: '+12%',
-      icon: <CallIcon />
+      icon: <CallIcon />,
+      isMissed: false
     },
     { 
       title: 'AI-Handled Calls',
       CardValue: '98',
       percent: '+77%',
-      icon: <BotIcon />
+      icon: <BotIcon />,
+      isMissed: false
     },
     {
       title: 'Warm Transfer',
       CardValue: '23',
       percent: '+18%',
-      icon: <ArrowIcon />
+      icon: <ArrowIcon />,
+      isMissed: false
     },
     {
       title: 'Appointments Booked',
       CardValue: '34',
       percent: '+8%',
-      icon: <BookedIcon />
+      icon: <BookedIcon />,
+      isMissed: false
     },
     {
       title: 'Missed/Failed Calls',
       CardValue: '6',
       percent: '-3%',
       isMissed: true,
-      icon: <MissedCallIcon />
+      icon: <MissedCallIcon />,
     },
     {
       title: 'Avg Call Duration',
       CardValue: '3:42',
       percent: '+15%',
-      icon: <ClockIcon />
+      icon: <ClockIcon />,
+      isMissed: false
     }
 ];

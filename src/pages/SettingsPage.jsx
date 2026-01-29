@@ -27,16 +27,16 @@ const SettingsPage = () => {
 
   return (
     <>
-      <div className="pt-6 max-w-137.5">
-        <div className="font-inter font-normal text-2xl leading-9 text-white flex gap-x-16 ml-3">
+      <div className="pt-6 md:max-w-137.5 w-full pr-4 sm:pr-0">
+        <div className="font-inter font-normal sm:text-2xl text-base leading-9 text-white flex gap-x-4 sm:gap-x-16 ml-3">
           <button>Profile</button>
           <button>Password Settings</button>
         </div>
-        <div className="mt-10">
-          <h3 className="font-inter font-normal text-[20px] leading-[150%] text-white mb-2">
+        <div className="sm:mt-10 mt-6">
+          <h3 className="font-inter font-normal text-base sm:text-xl leading-[150%] text-white mb-2">
             Profile Image
           </h3>
-          <div className="flex gap-x-2">
+          <div className="flex sm:gap-x-2 gap-x-1">
             <div className="size-25.5">
               <img src={profileImage} alt="profileImage" className="w-full" />
             </div>
@@ -45,26 +45,27 @@ const SettingsPage = () => {
                 to={"/settings/profile"}
                 className={`py-1 px-2 rounded-xl inset-shadow border-b border-[rgba(255,255,255,0.50)]`}
               >
-                <span className=" font-inter whitespace-nowrap font-medium text-base leading-[150%] text-white">
+                <span className=" font-inter whitespace-nowrap font-medium sm:text-base text-xs leading-[150%] text-white">
                   Edit Profile
                 </span>
               </Link>
             </div>
           </div>
-          <div className="pt-6 ">
+          <div className="sm:pt-6 pt-4">
             {profileData.map((item, id) => (
               <div
                 key={id}
-                class="flex   items-center  py-4 border-b border-borderBottom"
+                class="flex items-center sm:py-4 py-2 border-b border-borderBottom last:border-transparent"
               >
-                <p class="font-inter font-medium text-[20px] leading-[150%] text-white w-51.5 ">
+                <p class="font-inter font-medium text-[14px] sm:text-xl leading-[150%] text-white sm:w-51.5 min-w-[120px] whitespace-nowrap ">
                   {item.text}
                 </p>
-                <p class="font-inter font-normal text-[20px] leading-[150%] text-white">
+                <p class="font-inter font-normal text-[14px] sm:text-xl leading-[150%] text-white  ">
                   {item.para}
                 </p>
               </div>
             ))}
+         
           </div>
         </div>
       </div>

@@ -1,6 +1,13 @@
 import { useLocation } from "react-router-dom";
 
-const CardLayout = ({ beforeIcon, afterIcon, CardValue, title, percent,isMissed }) => {
+const CardLayout = ({
+  beforeIcon,
+  afterIcon,
+  CardValue,
+  title,
+  percent,
+  isMissed,
+}) => {
   let { pathname } = useLocation();
   return (
     <div
@@ -13,9 +20,8 @@ const CardLayout = ({ beforeIcon, afterIcon, CardValue, title, percent,isMissed 
         </div>
         <p className="text-2xl leading-9 text-white "> {CardValue}</p>
         <p
-          className={`${pathname === "/" ? (isMissed ? " text-red" : "text-green") : " text-gray"} text-sm font-normal leading-5`}
+          className={`${pathname === "/" || pathname === "/appointment" ? (isMissed === true ? "text-red" : isMissed === false ? "text-green" : "text-gray") : "text-gray"} text-sm font-normal leading-5`}
         >
-          {" "}
           {percent}
         </p>
       </div>

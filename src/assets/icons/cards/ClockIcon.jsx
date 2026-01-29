@@ -36,8 +36,8 @@ const ClockIcon = () => {
           y2="48"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#615FFF" />
-          <stop offset="1" stop-color="#2B7FFF" />
+          <stop stopColor="#615FFF" />
+          <stop offset="1" stopColor="#2B7FFF" />
         </linearGradient>
       </defs>
     </svg>

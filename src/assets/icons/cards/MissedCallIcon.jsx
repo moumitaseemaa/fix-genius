@@ -41,8 +41,8 @@ const MissedCallIcon = () => {
           y2="48"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FB2C36" />
-          <stop offset="1" stop-color="#FF2056" />
+          <stop stopColor="#FB2C36" />
+          <stop offset="1" stopColor="#FF2056" />
         </linearGradient>
       </defs>
     </svg>
