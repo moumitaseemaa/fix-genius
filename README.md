@@ -1,16 +1,74 @@
-# React + Vite
+# fix-genius
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+fix-genius is a modern, performance-focused web application built using React 19 and Vite. It features a sleek UI powered by Tailwind CSS v4 and integrates Radix UI with Shadcn UI to deliver accessible, scalable, and user-friendly components.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Technologies 
 
-## React Compiler
+* **Framework:** React 19
+* **Styling:** Tailwind CSS v4
+* **Routing:** React Router 7
+* **UI Components:** Radix UI & Shadcn
+* **Build Tool:** Vite
+* **Charts:** Recharts
+* **Icons:** Lucide React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Quick Start
+
+To get the project up and running locally, follow the steps below.
+
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/moumitaseemaa/fix-genius.git
+```
+
+### 2. go to the project directory
+```bash
+cd fix-genius
+```
+
+#### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Run Development Server
+```bash
+npm run dev
+```
+
+Once started, open http://localhost:5173 in your browser.
+
+## Scripts and Structure
+
+
+### Scripts
+
+| Command | Description |
+| :--- | :--- |
+| `npm run dev` | Starts the development server. |
+| `npm run build` | Builds the app for production. |
+| `npm run preview` | Locally previews the production build. |
+| `npm run lint` | Checks the code for linting errors. |
+
+
+### Project Structure
+
+ `src/` - Main source code.
+* `src/main.jsx` - Entry point
+* `src/App.jsx` - Main application component
+* `public/` - Static assets and files(like logo).
+* `src/index.css` - Global styles
+* `src/assets/` - Assets (images and icons).
+* `src/components/` -  UI components.
+* `src/pages/` - Page-level route components
+* `src/datas/` - Mock data or static project constants
+
+
+
+
