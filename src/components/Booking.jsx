@@ -13,13 +13,13 @@ const Booking = () => {
   };
 
   return (
-    <div className=" p-6.25 w-full rounded-4xl bg-linear-to-b from-[#1A1A2E] to-[#16213E]">
+    <div className="p-4 md:p-6.25 w-full rounded-4xl bg-linear-to-b from-[#1A1A2E] to-[#16213E]">
       <h3 className=" font-inter font-normal text-base leading-6 text-white">
         Booking Link
       </h3>
 
-      <div className=" mt-4 flex items-center justify-center gap-x-3">
-        <div className=" cursor-pointer grow py-3.25 px-4 rounded-[14px] border border-[#0e4236] bg-[#111421] font-arimo font-normal text-base leading-6 text-white">
+      <div className=" mt-4 flex max-md:flex-col items-center justify-center gap-3">
+        <div className=" cursor-pointer max-md:p-2 grow md:py-3.25  md:px-4 rounded-[14px] border border-[#0e4236] bg-[#111421] font-arimo font-normal text-sm md:text-base md:leading-6 text-white">
           https://techstore.com/book?id=store123
         </div>
         <button
@@ -28,11 +28,11 @@ const Booking = () => {
         >
           {copyLink ? (
             <Check
-              className={`${copyLink ? "scale-100" : " scale-0"}  transition-all duration-500 text-2xl`}
+              className={`${copyLink ? "scale-100" : " scale-0"}  transition-all duration-500 md:text-2xl`}
             />
           ) : (
             <Copy
-              className={`${copyLink ? "scale-0" : "scale-100"} transition-all duration-500 text-2xl`}
+              className={`${copyLink ? "scale-0" : "scale-100"} transition-all duration-500 md:text-2xl`}
             />
           )}
           Copy Link

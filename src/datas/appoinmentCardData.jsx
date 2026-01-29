@@ -4,7 +4,7 @@ import AppointmentWarnIcon from "../assets/icons/appointment/AppointmentWarnIcon
 
 export const appoinmentCardData = [
   {
-    icon: <AppointmentCalenderIcon />,
+    icon: <AppointmentCalenderIcon className={"size-5"} />,
     title: "Total Booked",
     CardValue: "34",
     percent: "+8 this week",
