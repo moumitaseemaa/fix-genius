@@ -5,7 +5,6 @@ import PlayIcon from "../assets/icons/callDetails/PlayIcon.jsx";
 import PaperIcon from "../assets/icons/callDetails/PaperIcon.jsx";
 
 const CallDetails = ({ data }) => {
-  console.log(data);
   return (
      <section className="rounded-3xl color-card-bg  ">
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer p-4 border-b border-[#2B7FFF20] ">

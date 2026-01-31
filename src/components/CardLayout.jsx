@@ -14,6 +14,7 @@ const CardLayout = ({
       className={`color-card-bg p-2 sm:p-6 rounded-2xl flex sm:flex-row flex-col-reverse items-center sm:items-start gap-2 font-inter justify-between text-center sm:text-start`}
     >
       <div className="flex flex-col flex-1 gap-1 sm:gap-2">
+        {/* =============== beforeIcon =============== */}
         <div className="flex gap-3">
           {beforeIcon && <div>{beforeIcon}</div>}
           <p
@@ -32,6 +33,7 @@ const CardLayout = ({
           {percent}
         </p>
       </div>
+      {/* =============== afterIcon =============== */}
       {afterIcon && <div className="size-8">{afterIcon}</div>}
     </div>
   );
