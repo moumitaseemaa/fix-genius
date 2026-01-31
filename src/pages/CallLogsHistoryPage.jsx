@@ -23,7 +23,7 @@ const CallLogsHistoryPage = () => {
         <div className="grow w-full md:max-w-1/2 ">
           <SearchBar
             icon={<SearchIcon />}
-            className={"color-card pl-4 h-12.5   "}
+            className={"color-card-bg pl-4 h-12.5   "}
           />
         </div>
         <div className="grow md:max-w-1/2 ">

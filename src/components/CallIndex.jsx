@@ -24,7 +24,7 @@ const CallLogs = () => {
         <div className="flex flex-col gap-6 grow max-w-1/2 text-white ">
           <SearchBar
             icon={<SearchIcon />}
-            className={"color-card pl-4 h-12.5   "}
+            className={"color-card-bg pl-4 h-12.5   "}
           />
 
           <CallList active={active} setActive={setActive} />

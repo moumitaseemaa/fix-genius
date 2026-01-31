@@ -45,10 +45,10 @@ const CallDetails = ({ data }) => {
           <p className="text-gray text-sm leading-5 mb-1 ">Call Type</p>
           <Badge
             className={` rounded-[10px] py-1 px-2 font-inter leading-5 text-xs 
-                ${data.callType === "AI Resolved" && "text-success bg-[#00C95020] border border-[#00C95030] "}
-                ${data.callType === "Warm Transfer" && "text-warn bg-[#FF690020] border border-[#FF690030] "}
+                ${data.callType === "AI Resolved" && "text-[#05DF72] bg-[#00C95020] border border-[#00C95030] "}
+                ${data.callType === "Warm Transfer" && "text-[#FF8904] bg-[#FF690020] border border-[#FF690030] "}
                 ${data.callType === "Appointment" && "text-info bg-[#2B7FFF20] border border-[#2B7FFF30] "}
-                ${data.callType === "Dropped" && "text-error bg-[#FF150020] border border-[#FF690030] "} `}
+                ${data.callType === "Dropped" && "text-[#FF0404] bg-[#FF150020] border border-[#FF690030] "} `}
           >
             {data.callType}
           </Badge>
@@ -65,7 +65,7 @@ const CallDetails = ({ data }) => {
           }
         >
           <PlayIcon />
-          <p className="text-[#C27AFF]  ">Play Audio Recording</p>
+          <p className="text-[#C27AFF]">Play Audio Recording</p>
         </Button>
 
         <div className="flex gap-2 items-center mb-3 text-info ">

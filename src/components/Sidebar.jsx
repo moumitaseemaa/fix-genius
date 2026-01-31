@@ -1,14 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import LogoutIcon from "../assets/icons/sidebar/LogoutIcon.jsx";
-import logo from '../assets/images/logo.png'
+import logo from "../assets/images/logo.png";
 import menuItemsData from "../datas/menuItemsData.jsx";
 
 const Sidebar = () => {
   const { pathname } = useLocation();
 
   return (
- 
-     <aside className="h-screen sticky top-0 flex flex-col bg-primary pt-9.5 pb-13 border border-[#2B7FFF20] ">
+    <aside className="h-screen sticky top-0 flex flex-col bg-primary pt-9.5 pb-13 border border-[#2B7FFF20] ">
       <div className="w-fit mx-auto">
         <img className="size-8 xl:size-fit" src={logo} alt="logo" />
       </div>
@@ -30,9 +29,9 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      <button className="flex items-center gap-4 ml-4 mt-auto cursor-pointer">
+      <button className="flex items-center gap-4 ml-2 md:ml-4 mt-auto cursor-pointer">
         <span className="hover:text-red">
-          <LogoutIcon />
+          <LogoutIcon className={"size-6 md:size-8"} />
         </span>
         <span className="hidden xl:block font-medium text-base leading-[150%] text-[#FF1100]">
           Log Out
