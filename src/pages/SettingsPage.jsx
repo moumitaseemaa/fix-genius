@@ -27,7 +27,7 @@ const SettingsPage = () => {
 
   return (
     <>
-      <div className="pt-6 md:max-w-137.5 w-full pr-4 md:pr-0">
+      <div className="pt-6 md:max-w-137.5 w-full pr-4 md:pr-0 ml-3 md:ml-0">
         <div className="font-inter font-normal sm:text-2xl text-base leading-9 text-white flex gap-x-4 sm:gap-x-16 ml-3">
           <button>Profile</button>
           <button>Password Settings</button>
